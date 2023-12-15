@@ -7,8 +7,13 @@ function Answer1() {
 
     if (numberContent === 17) {
         alert("You are correct!");
+        rightAButton.style.backgroundColor = "#28a745";
+        rightAButton.style.color = "#fff";
+        document.getElementById("main").textContent = "Congratulations! You know your Celtics history!"
     } else {
         alert("Try again.");
+        rightAButton.style.backgroundColor = "";
+        rightAButton.style.color = ""
     }
 }
 
@@ -21,9 +26,11 @@ document.querySelectorAll(".second button").forEach(function(button) {
 
 function checkAnswer2(clickedButton) {
     if (clickedButton.classList.contains("Right")) {
-        alert("Correct! Denver defeated the Celtics");
+        alert("Correct! Denver defeated the Celtics")
+     
     } else {
         alert("Incorrect. Hint: They call him the Joker");
+      
     }
 }
 
@@ -37,8 +44,10 @@ document.querySelectorAll(".third button").forEach(function(button) {
 function checkAnswer3(clickedButton) {
     if (clickedButton.classList.contains("Win")) {
         alert("Correct! What a great year for the NBA");
+       
     } else {
         alert("Incorrect. Hint: The first porgammable cpu was created this year");
+     
     }
 }
 
@@ -67,3 +76,13 @@ const mainDiv = document.getElementById("main");
 
 // Append the paragraph element to the main div
 mainDiv.appendChild(pElement);
+
+
+document.getElementById("emailForm").addEventListener("submit", function(event) {
+    let emailInput = document.getElementById("email");
+
+    if (!emailInput.checkValidity()) {
+        alert("Please enter a valid email address.");
+        event.preventDefault(); 
+    }
+});

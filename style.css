@@ -1,11 +1,64 @@
-.head{
+/* Reset some default margin and padding */
+#BG{
     color: green;
-    text-align: center;
 }
-img {
-    background-image:none;
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+    
 }
-p {
-    text-align: center;
-    border: 1px solid ;
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+}
+
+#main {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+    color: green;
+}
+
+.first, .second, .third {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.rightA {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.wrongA, .Right, .Wrong, .Loss, .Win {
+    background-color: #dc3545;
+    color: #fff;
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
